@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+body
+{
+	font-family: 'Oswald';
+	margin: 0;
+	padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background: #222;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.conten {
+  margin: 0;
+  height: 80px;
+  padding: 0 20%;
+  width: 100%;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.iconMenu{
+  display: none;
+  height: 22px;
+  font-size: 50px;
+  color: #FFFFFF;
+  line-height: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.iconMenu:hover{
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+#btnMenu{
+  display: none;
+}
+
+.menu{
+  width: 340px;
+}
+
+.menu a{
+	padding: 10px;
+	margin-left: 2%;
+	text-decoration: none;
+	color: #FFF;
+	transition: all 0.2s;
+	border-bottom: solid 2px #222; 
+}
+
+.menu a:hover
+{
+	border-bottom: solid 4px green; 
+}
+
+#botones2{
+	outline:none;
+	color: #FFF;
+	text-decoration: none;
+  	border-bottom: solid #28a95e 2px;
+	padding: 10px 30px;
+    font-family: sans-serif;
+    font-size: 15px;
+	transition: 0.2s;
+}
+#botones2:hover{
+  	background: rgba(250,250,250,0.5);
+}
+#botones2:active{
+  	background: rgba(0,0,0,0.5);
+}
+#conpad{
+  	display: flex;
+  	justify-content: flex-start;
+  	width: 100%;
+  	height: auto;
+  	margin-top: 55px;
+}
+
+.menpad{
+  background: #1D8348;
+  width: 20%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#menop{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.mostra{
+  height: 100%;
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.mostra img{
+  height: auto;
+  width: 30px;
+}
+
+#bot-menu
+{
+  margin-top: 30px;
+  display: none;
+}
+
+.menpad label{
+  display: none;
+}
+
+h2{
+	color: white;
+	text-align: center;
+}
+#contener{
+  	height: auto;
+  	width: 80%;
+}
+h3
+{
+  font-size: 30px;
+	text-align: center;
+}
+footer
+{
+	font-family: 'Oswald';
+  font-size: 16px;
+	border-color: gray;
+	text-align: center;
+	color: black;
+}
+
+.form{
+	background: -webkit-linear-gradient(#FFF,#1AB9B8);
+	padding: 10px 2%;
+  height: auto;
+  width: 96%;
+  margin: 0;
+}
+
+.ce
+{
+  margin-left: 5px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  width: 25%;
+  border: solid 2px #000;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  font-family: 'Oswald';
+  font-size: 18px;
+  color: #000;
+}
+.ce:hover
+{
+  border: solid 2px #78909C;
+} 
+
+.a {
+  background-color: #1F618D;
+  text-decoration: none;
+  font-family: 'Oswald';
+  font-size: 18px;
+  color: white;
+  padding: 10px 15px;
+  margin-top: 50px;
+  margin-left: -6px;
+  border: solid #1F618D 2px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  outline: none;
+  transition: 0.2s;
+}
+.a:hover{
+    background: #1E88E5;
+    transition: 0.2s;
+    border: solid #1E88E5 2px;
+    border-bottom-right-radius: 90%;
+    border-top-right-radius: 90%;
+    cursor: pointer;
+}
+.a:active{
+  border: inset #1F618D 2px;
+}
+
+.tablaresposive{
+  width: 100%;
+  height: auto;
+  overflow: auto;
+}
+.tabla{
+  width: 100%; 
+  background-color: #F2F3F4; 
+  border-collapse: collapse;
+}
+.lin{
+	background-color: #1AB9B8; 
+	border-bottom: solid 5px teal;
+	color:white;
+}
+.celcab{
+  font-size: 20px;
+	padding:10px;
+	border-right: solid 1px teal;  
+}
+
+.cel{
+  font-size: 18px;
+	padding:10px;
+	border-bottom: 1px solid #999999;
+}
+
+.celic{
+  text-align: center;
+  padding:10px;
+  border-bottom: 1px solid #999999;
+}
+
+.icon-dim{
+  height: 30px;
+  width: auto;
+}
+
+@media(max-width: 780px){
+  .iconMenu{
+    display: block;
+  }
+  .menu{
+    background: rgba(34, 34, 34, 0.8);
+    width: 270px;
+    position: absolute;
+    top: -190px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s;
+  }
+
+  .menu a{
+    margin-left: 0;
+    border-bottom: solid 2px #FFF;
+  }
+
+  .menu a:hover{
+    background: rgba(255, 255, 255, 0.4);
+    border-bottom: solid 2px green; 
+  }
+
+  #btnMenu:checked ~ .menu{
+    top: 80px;
+  }
+
+  /*Tabla y menu lateral*/
+  #contener{
+    width: 100%
+  }
+  .form{
+    width: auto;
+    margin-left: 30px;
+  }
+  .ce{
+    width: 50%;
+  }
+  .tablaresposive{
+    width: auto;
+    margin-left: 30px;
+  }
+  .menpad{
+    height: 84vh;
+    top: 80px;
+    position: fixed;
+    margin-left: -190px;
+    width: 220px;
+    transition: all 0.2s;
+  }
+  .menop{
+    width: 90%;
+  }
+  .menpad label{
+    display: block;
+  }
+  .menpad label:hover{
+    background: rgba(250,250,250,0.4);
+    cursor: pointer;
+  }
+  #bot-menu:checked ~ .menpad{
+    margin-left: 0;
+  }
+}

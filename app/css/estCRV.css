@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+body
+{
+	font-family: 'Oswald';
+	margin: 0;
+	padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background: #222;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.conten {
+  margin: 0;
+  height: 80px;
+  padding: 0 20%;
+  width: 100%;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  transition: all 0.2s;
+}
+
+.iconMenu{
+  display: none;
+  height: 22px;
+  font-size: 50px;
+  color: #FFFFFF;
+  line-height: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.iconMenu:hover{
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+#btnMenu{
+  display: none;
+}
+
+.menu{
+  width: 340px;
+}
+
+.menu a{
+	padding: 10px;
+	margin-left: 2%;
+	text-decoration: none;
+	color: #FFF;
+	transition: all 0.2s;
+	border-bottom: solid 2px #222; 
+}
+
+.menu a:hover
+{
+	border-bottom: solid 4px green; 
+}
+
+#botones2{
+	outline:none;
+	color: #FFF;
+	text-decoration: none;
+  	border-bottom: solid #28a95e 2px;
+	padding: 10px 30px;
+    font-family: sans-serif;
+    font-size: 15px;
+	transition: 0.2s;
+}
+#botones2:hover{
+  	background: rgba(250,250,250,0.5);
+}
+#botones2:active{
+  	background: rgba(0,0,0,0.5);
+}
+#conpad{
+  	display: flex;
+  	justify-content: flex-start;
+  	width: auto;
+  	height: 80%;
+  	margin-top: 80px;
+}
+.menpad{
+  background: #1D8348;
+  width: 20%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#menop{
+  width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.mostra{
+  height: 100%;
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.mostra img{
+  height: auto;
+  width: 30px;
+}
+
+#bot-menu
+{
+  margin-top: 30px;
+  display: none;
+}
+
+.menpad label{
+  display: none;
+}
+
+h2{
+	color: white;
+	text-align: center;
+}
+
+#contener{
+  	height: auto;
+  	width: 80%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.factur h3{
+  font-size: 25px;
+  text-align: center;
+}
+
+.factur h4{
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.factur{
+	background-color: #FFF;
+  width: 400px;
+  height: auto;
+	padding: 30px;
+  margin: 12% 0%;
+	box-shadow: 0px 0px 5px 5px #999999;
+}
+
+.camp{
+  padding-left: 10px;
+  outline: 0;
+  width: 95%;
+  height: 40px;
+  border: 2px solid #999999;
+}
+
+.camp:hover{
+  border-color: #1A9BCB;
+}
+
+.camp:active{
+  border-color: #1A9BCB;
+}
+
+.llena{
+  display: flex;
+  justify-content: center;
+}
+
+.botre{
+  background-color: #000;
+  border: 2px solid #000;
+  padding: 8px 20px;
+  font-family: 'Oswald';
+  font-size: 16px;
+  color: #FFF;
+}
+
+.botre:hover{
+  background-color: #191919;
+  border-color: #191919;
+  cursor: pointer;
+}
+
+.botre:active{
+  background-color: #000;
+  border-color: #000;
+  box-shadow: inset 0 0 5px 5px rgba(255,255,255,0.2);
+}
+
+footer
+{
+	font-family: 'Oswald';
+  font-size: 16px;
+	border-color: gray;
+	text-align: center;
+	color:black;
+}
+
+@media(max-width: 780px){
+  .iconMenu{
+    display: block;
+  }
+  .menu{
+    background: rgba(34, 34, 34, 0.8);
+    width: 270px;
+    position: absolute;
+    top: -190px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s;
+  }
+
+  .menu a{
+    margin-left: 0;
+    border-bottom: solid 2px #FFF;
+  }
+
+  .menu a:hover{
+    background: rgba(255, 255, 255, 0.4);
+    border-bottom: solid 2px green; 
+  }
+
+  #btnMenu:checked ~ .menu{
+    top: 80px;
+  }
+
+  /*Tabla y menu lateral*/
+  .menpad{
+    height: 84vh;
+    top: 80px;
+    position: fixed;
+    margin-left: -190px;
+    width: 220px;
+    transition: all 0.2s;
+  }
+  .menop{
+    width: 90%;
+  }
+  .menpad label{
+    display: block;
+  }
+  .menpad label:hover{
+    background: rgba(250,250,250,0.4);
+    cursor: pointer;
+  }
+  #bot-menu:checked ~ .menpad{
+    margin-left: 0;
+  }
+  #contener {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  table{
+    width: 100%;
+  }
+}
+@media(max-width: 400px){
+  .factur{
+    width: 100%;
+  }
+}
